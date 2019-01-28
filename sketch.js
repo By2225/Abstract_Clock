@@ -25,4 +25,25 @@ function draw() {
 	fill('#F336799');
 	circle(secCircleXaxis, y/2, secCircleSize);
 	secCircleXaxis= secCircleSize + ((second()) * ((x - 2*secCircleSize) / 59));
+		/* Included implementation of translate(), push(), and pop() but unnecessary
+	push();
+	fill('#9ACEFF');
+	translate(hourCircleXaxis, 0);
+	circle(0, y/2, hourCircleSize);
+	hourCircleXaxis= hourCircleSize + ((hour() % 12) * ((x - 2*hourCircleSize) / 11));
+	pop();
+
+	push();
+	translate(minCircleXaxis, 0);
+	fill('#669ACC');
+	circle(0, y/2, minCircleSize);
+	minCircleXaxis= minCircleSize + ((minute()) * ((x - 2*minCircleSize) / 59));
+	pop();
+
+	push();
+	translate(secCircleXaxis, 0);
+	fill('#F336799');
+	circle(0, y/2, secCircleSize);
+	secCircleXaxis= secCircleSize + ((second()) * ((x - 2*secCircleSize) / 59));
+	pop();*/
 }
